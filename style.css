@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-color: #060606;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #fdfdfd;
+}
+
+/* navigation menu */
+nav ul {
+    background-color: #f9f6f5;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #070707;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+}
+
+body {
+    background-color: rgba(188, 184, 184, 0.767);
+ }
+
+/* main */
+main {
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 140px;
+
+}
+
+.baju-section,
+.hoodie-section,
+.sepatu-section {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; 
+}
+
+.baju-item,
+.hoodie-item,
+.sepatu-item {
+    flex: 0 0 21%; 
+    margin: 20px;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.baju-item img,
+.hoodie-item img,
+.sepatu-item img {
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.baju-item h3,
+.sepatu-item h3,
+.hoodie-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.hoodie-item p,
+.baju-item p,
+.sepatu-item p {
+    font-size: 16px;
+    color: #111111;
+}
+
+/* footer */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+}
